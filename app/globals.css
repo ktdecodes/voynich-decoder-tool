@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.my-class {
+  @apply text-lg font-bold;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
