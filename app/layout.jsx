@@ -1,5 +1,6 @@
 // app/layout.jsx
-import './globals.css';
+import "../globals.css";
+
 export const metadata = {
   title: "Voynich Decoder",
   description: "A tool to decode phonetic Voynich text",
