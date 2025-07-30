@@ -1,7 +1,8 @@
 
-// pages/api/decode.js
+//pages/api/decode.ts
 export default function handler(req, res) {
-  const { input, domain } = req.body;
+  if (req.method === 'POST') {
+    const { input, domain } = req.body;
 
   // Placeholder response simulating decoding
   res.status(200).json({
@@ -11,4 +12,7 @@ export default function handler(req, res) {
     incantatory: domain === "ritual" ? "chant for opening warmth" : null,
     inferred: "encourages conception during ovulation by warming the womb"
   });
+} else {
+  res.status(405).json({ message: "Method not allowed" });
+  }
 }

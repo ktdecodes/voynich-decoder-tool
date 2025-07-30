@@ -1,1 +1,0 @@
-<your React code from the canvas>
