@@ -4,6 +4,7 @@
 
 .my-class {
   @apply text-lg font-bold;
+}
 
 @layer base {
   :root {
